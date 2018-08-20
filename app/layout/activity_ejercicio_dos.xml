@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExcerciseTwo">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@android:color/background_dark"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Reto : Creación de la clase automóvil, con los siguientes atributos:\n *Modelo,marca,año.\n y sus métodos setter y getter \n \n"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="18dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="      public class"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/txt_nombre_clase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_class"
+                        android:layout_toRightOf="@+id/tv_class"
+                        android:layout_toEndOf="@+id/tv_class"
+                        android:background="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:hint="  Nombre  "
+                         />
+                    <TextView
+                        android:id="@+id/tv_llave"
+                        android:text="   { "
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/txt_nombre_clase"
+                        android:layout_toRightOf="@+id/txt_nombre_clase"
+                        android:layout_toEndOf="@+id/txt_nombre_clase" />
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_modelo"
+                    android:text="        private "
+                    android:textSize="14dp"
+                    android:textColor="@color/colorBlanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_tipo_modelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_modelo"
+                    android:layout_toRightOf="@+id/tv_modelo"
+                    android:layout_toEndOf="@+id/tv_modelo"
+                    android:background="@color/colorBlanco"
+                    android:textSize="16dp"
+                    android:hint="tipo de dato"
+                    />
+                <EditText
+                    android:id="@+id/txt_nombre_modelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignBottom="@+id/txt_tipo_modelo"
+                    android:layout_toRightOf="@+id/txt_tipo_modelo"
+                    android:layout_toEndOf="@+id/txt_tipo_modelo"
+                    android:background="@color/colorBlanco"
+                    android:textSize="16dp"
+                    android:hint="nombre"
+                    />
+            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_marca"
+                        android:textSize="14dp"
+                        android:text="        private "
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_tipo_marca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_marca"
+                        android:layout_toRightOf="@+id/tv_marca"
+                        android:layout_toEndOf="@+id/tv_marca"
+                        android:background="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:hint="tipo de dato"
+                        />
+                    <EditText
+                        android:id="@+id/txt_nombre_marca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignBottom="@+id/txt_tipo_marca"
+                        android:layout_toRightOf="@+id/txt_tipo_marca"
+                        android:layout_toEndOf="@+id/txt_tipo_marca"
+                        android:background="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:hint="nombre"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_ano"
+                        android:text="        private "
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_tipo_anio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_ano"
+                        android:layout_toRightOf="@+id/tv_ano"
+                        android:layout_toEndOf="@+id/tv_ano"
+                        android:background="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:hint="tipo de dato "
+                        />
+                    <EditText
+                        android:id="@+id/txt_nombre_anio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignBottom="@+id/txt_tipo_anio"
+                        android:layout_toRightOf="@+id/txt_tipo_anio"
+                        android:layout_toEndOf="@+id/txt_tipo_anio"
+                        android:background="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:hint="nombre"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_constructor"
+                    android:textSize="16dp"
+                    android:text="            public Animal(){}     //Método constructor\n              //Método setter y getter"
+                    android:textColor="@color/colorBlanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_setter_modelo"
+                        android:text="        public void setModelo ( "
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_setter_modelo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_setter_modelo"
+                        android:layout_toRightOf="@+id/tv_setter_modelo"
+                        android:layout_toEndOf="@+id/tv_setter_modelo"
+                        android:background="@color/colorBlanco"
+                        android:textSize="14dp"
+                        android:hint="tipo dato"
+                        />
+                    <TextView
+                        android:id="@+id/txt_setModelo"
+                        android:text="nomModelo){"
+                        android:textSize="14dp"
+                        android:layout_alignBottom="@+id/txt_setter_modelo"
+                        android:layout_toRightOf="@+id/txt_setter_modelo"
+                        android:layout_toEndOf="@+id/txt_setter_modelo"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="           modelo =nomNModelo; \n            }"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/txt_getter_modelo"
+                        android:text="           public"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_tipo_gmodelo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignBottom="@+id/txt_getter_modelo"
+                        android:layout_toRightOf="@+id/txt_getter_modelo"
+                        android:layout_toEndOf="@+id/txt_getter_modelo"
+                        android:background="@color/colorBlanco"
+                        android:textSize="14dp"
+                        android:hint="tipo"
+                        />
+                    <TextView
+                        android:text="  getModelo(){"
+                        android:textSize="14dp"
+                        android:layout_alignBottom="@+id/txt_tipo_gmodelo"
+                        android:layout_toRightOf="@+id/txt_tipo_gmodelo"
+                        android:layout_toEndOf="@+id/txt_tipo_gmodelo"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="           return =modelo; \n           }"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_setter_marca"
+                        android:text="          public void setMarca ( "
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_setter_marca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_setter_marca"
+                        android:layout_toRightOf="@+id/tv_setter_marca"
+                        android:layout_toEndOf="@+id/tv_setter_marca"
+                        android:background="@color/colorBlanco"
+                        android:textSize="14dp"
+                        android:hint="tipo dato"
+                        />
+                    <TextView
+                        android:id="@+id/txt_setMarca"
+                        android:text=" nomMarca){"
+                        android:textSize="14dp"
+                        android:layout_alignBottom="@+id/txt_setter_marca"
+                        android:layout_toRightOf="@+id/txt_setter_marca"
+                        android:layout_toEndOf="@+id/txt_setter_marca"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="           marca =nomMarca; \n            }"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/txt_getter_marca"
+                        android:text="           public"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_tipo_gmarca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignBottom="@+id/txt_getter_marca"
+                        android:layout_toRightOf="@+id/txt_getter_marca"
+                        android:layout_toEndOf="@+id/txt_getter_marca"
+                        android:background="@color/colorBlanco"
+                        android:textSize="14dp"
+                        android:hint="tipo"
+                        />
+                    <TextView
+                        android:text="  getMarca(){"
+                        android:textSize="14dp"
+                        android:layout_alignBottom="@+id/txt_tipo_gmarca"
+                        android:layout_toRightOf="@+id/txt_tipo_gmarca"
+                        android:layout_toEndOf="@+id/txt_tipo_gmarca"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="           return =marca; \n           }"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_setter_anio"
+                        android:text="          public void setAnio ( "
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_setter_anio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_setter_anio"
+                        android:layout_toRightOf="@+id/tv_setter_anio"
+                        android:layout_toEndOf="@+id/tv_setter_anio"
+                        android:background="@color/colorBlanco"
+                        android:textSize="14dp"
+                        android:hint="tipo dato"
+                        />
+                    <TextView
+                        android:id="@+id/txt_setAnio"
+                        android:text=" nomAnio){"
+                        android:textSize="14dp"
+                        android:layout_alignBottom="@+id/txt_setter_anio"
+                        android:layout_toRightOf="@+id/txt_setter_anio"
+                        android:layout_toEndOf="@+id/txt_setter_anio"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="           anio =nomAnio; \n           }"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/txt_getter_anio"
+                                android:text="           public"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorBlanco"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:id="@+id/txt_tipo_ganio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_alignBottom="@+id/txt_getter_anio"
+                                android:layout_toRightOf="@+id/txt_getter_anio"
+                                android:layout_toEndOf="@+id/txt_getter_anio"
+                                android:background="@color/colorBlanco"
+                                android:textSize="14dp"
+                                android:hint="tipo"
+                                />
+                            <TextView
+                                android:text="  getAnio(){"
+                                android:textSize="14dp"
+                                android:layout_alignBottom="@+id/txt_tipo_ganio"
+                                android:layout_toRightOf="@+id/txt_tipo_ganio"
+                                android:layout_toEndOf="@+id/txt_tipo_ganio"
+                                android:textColor="@color/colorBlanco"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:text="           return =anio; \n           }\n }"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorBlanco"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:textColor="@color/colorBlanco"
+                            android:id="@+id/btn_verificaA"
+                            android:text="Verificar"/>
+            </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

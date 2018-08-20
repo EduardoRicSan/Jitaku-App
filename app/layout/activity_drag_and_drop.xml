@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".DragAndDrop">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardUseCompatPadding="true"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/diagrama_de_flujo"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/indicacion_arrastrar"
+                android:textSize="14dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/target_inicio_fin"
+            android:background="#b31ec1"
+            android:layout_width="160dp"
+            android:layout_height="70dp">
+            <TextView
+                android:text="@string/inicio_fin"
+                android:id="@+id/iv_three"
+                android:textAlignment="center"
+                android:layout_width="80dp"
+                android:layout_height="70dp" />
+                    </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/target_impresion"
+            android:background="#21c4ae"
+            android:layout_width="160dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:text="@string/impresi_n"
+                android:textAlignment="center"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:id="@+id/iv_four" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/target_proceso"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="#d1d80d"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="160dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:text="@string/proceso"
+                android:textAlignment="center"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:id="@+id/iv_two" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/target_decicion"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:weightSum="1"
+            android:paddingTop="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="160dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:text="@string/decisi_n"
+                android:textAlignment="center"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:id="@+id/iv_one"
+                android:padding="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0dd828"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:background="@drawable/impresion"
+                    android:id="@+id/btn_impresion"
+                    android:layout_height="70dp"
+                    android:layout_width="80dp" />
+
+                <Button
+                    android:background="@drawable/decicion"
+                    android:id="@+id/btn_decision"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:background="@drawable/proceso"
+                    android:id="@+id/btn_proceso"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+                <Button
+                    android:background="@drawable/iniciofin"
+                    android:id="@+id/btn_inicio_fin"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/target_entrada_dato"
+            android:background="#b31ec1"
+            android:layout_width="160dp"
+            android:layout_height="70dp">
+            <TextView
+                android:text="ENTRADA\n DATOS"
+                android:id="@+id/iv_five"
+                android:textAlignment="center"
+                android:layout_width="80dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/target_decicion_multiple"
+            android:background="#21c4ae"
+            android:layout_width="160dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:text="DECISIÓN\n MULTIPLE"
+                android:textAlignment="center"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:id="@+id/iv_six" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/target_direccion"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="#d1d80d"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="160dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:text="DIRECCIÓN\n FLUJO"
+                android:textAlignment="center"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:id="@+id/iv_seven" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0dd828"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:background="@drawable/direcciondecicion"
+                    android:id="@+id/btn_direccion"
+                    android:layout_height="70dp"
+                    android:layout_width="80dp" />
+
+                <Button
+                    android:background="@drawable/entradadato"
+                    android:id="@+id/btn_entrada_dato"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:background="@drawable/multipledecicion"
+                    android:id="@+id/btn_multiple"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

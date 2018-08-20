@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExerciseDataType">
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@android:color/background_dark"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ponte_a_prueba_con_los_tipos_de_datos_n"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorBlanco"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/tv_class"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Declara las variables nombre,edad y peso, en los siguientes espacios.\n Recuerda finalizar con ';' "
+                            android:textColor="@color/colorBlanco"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="        private "
+                                android:textSize="14dp"
+                                android:textColor="@color/colorBlanco"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:id="@+id/txt_tipo_nombre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorBlanco"
+                                android:textSize="16dp"
+                                android:hint="tipo de dato"
+                                />
+                            <EditText
+                                android:id="@+id/txt_nombre_nombre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/colorBlanco"
+                                android:textSize="16dp"
+                                android:hint="nombre"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="14dp"
+                                android:text="        private "
+                                android:textColor="@color/colorBlanco"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:id="@+id/txt_tipo_edad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorBlanco"
+                                android:textSize="16dp"
+                                android:hint="tipo de dato"
+                                />
+                            <EditText
+                                android:id="@+id/txt_nombre_edad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/colorBlanco"
+                                android:textSize="16dp"
+                                android:hint="nombre"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="        private "
+                                android:textColor="@color/colorBlanco"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:id="@+id/txt_tipo_peso"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorBlanco"
+                                android:textSize="16dp"
+                                android:hint="tipo de dato "
+                                />
+                            <EditText
+                                android:id="@+id/txt_nombre_peso"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="@color/colorBlanco"
+                                android:textSize="16dp"
+                                android:hint="nombre"
+                                />
+                        </LinearLayout>
+                        <TextView
+                            android:textSize="16dp"
+                            android:text="@string/se_pide_determinar_si_una_persona_es_mayor_de_edad_para_esto_se_usa_una_variable_de_tipo_boolean_es_correcto"
+                            android:textColor="@color/colorBlanco"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                <RadioGroup
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cierto"
+                        android:textColor="@color/colorBlanco"
+                        android:id="@+id/rb_cierto"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Falso"
+                        android:textColor="@color/colorBlanco"
+                       />
+                </RadioGroup>
+                <TextView
+                    android:textColor="@color/colorBlanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/area_triangulo"
+                    android:textSize="16dp"
+                    />
+                <RadioGroup
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="String"
+                        android:textColor="@color/colorBlanco"
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="double"
+                        android:textColor="@color/colorBlanco"
+                        android:id="@+id/rb_double"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="int"
+                        android:textColor="@color/colorBlanco"
+                        />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/declara_los_tipos_de_datos_correspondientes_a_las_siguenites_variables_fecha_cantidad_verdadero_falso"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="        private "
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_tipo_fecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:hint="tipo de dato"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:text="fecha;"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="        private "
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_tipo_cantidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:hint="tipo de dato"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:text="cantidad;"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="        private "
+                        android:textSize="14dp"
+                        android:textColor="@color/colorBlanco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_tipo_verdadero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:hint="tipo de dato"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="16dp"
+                        android:text="verdaderoFalso;"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

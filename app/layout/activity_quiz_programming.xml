@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizProgrammingActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+
+                    <TextView
+                        android:id="@+id/tv_question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="20dp"
+                        android:text="Es el patrón de diseño Factory:"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            >
+
+                            <RadioButton
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:layout_marginBottom="7dp"
+                                android:background="@drawable/img4"
+                                />
+
+                            <RadioButton
+                                android:layout_width="110dp"
+                                android:layout_height="95dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/img5" />
+
+
+
+
+                            <RadioButton
+                                android:id="@+id/rb_question_good1"
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/factory" />
+
+                            <RadioButton
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/propiedades" />
+
+
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_question2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:text="Es el patrón de diseño Prototype"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp">
+
+
+                            <RadioButton
+
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/img3"
+                                />
+
+                            <RadioButton
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/tprimitivo"
+                                />
+
+
+                            <RadioButton
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/pseudocodigo"
+                                android:paddingLeft="5dp"
+                                />
+                            <RadioButton
+                                android:id="@+id/rb_question_good2"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/proto"
+                                android:layout_marginBottom="7dp"
+                                android:layout_marginLeft="10dp"
+                                />
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_question3"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="20dp"
+                        android:text="Son lenguajes de POO:"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <RadioGroup
+                            android:id="@+id/rdg_color_brow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_question3"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp">
+
+
+                            <RadioButton
+                                android:id="@+id/rb_question_good3"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/lenguajespooo" />
+
+                            <RadioButton
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/abtractclass" />
+
+                            <RadioButton
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/basicos" />
+                            <RadioButton
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="7dp"
+                                android:background="@drawable/img1" />
+
+                        </RadioGroup>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--pregunta en el card-->
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_question4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="20dp"
+                        android:text="¿Qué es un objeto en POO?"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rdg_color_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_question4"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp">
+
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Es una instancia de una clase"
+                            android:background="@drawable/buttonstyle3"/>
+
+                        <RadioButton
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Es aquel que tiene un estado, comportamiento e identidad"
+                            android:background="@drawable/buttonstyle"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rb_question_good4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:background="@drawable/buttonstyle4"
+                            android:text="Todas las anteriores" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/tv_question5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="20dp"
+                        android:text="Definición de Abstracción en POO..."
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rdg_color_blue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_question5"
+
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp">
+
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Algo muy raro"
+                            android:background="@drawable/buttonstyle3"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_question_good5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Repesentar a la característica esencial de un objeto."
+                            android:background="@drawable/buttonstyle"/>
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:background="@drawable/buttonstyle4"
+                            android:text="No lo sé" />
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/tv_question6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="20dp"
+                        android:text="La Cohesión en POO es:"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rdg_color_bro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_question6"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp">
+
+                        <RadioButton
+                            android:id="@+id/rb_question_good6"
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:text="Es la medida o nivel de cuanto una entidad se encuentra en un sistema"
+                            android:background="@color/blue_light"/>
+
+                        <RadioButton
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/buttonstyle6"
+                            android:text="La química entre los novios." />
+
+                        <RadioButton
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="7dp"
+                            android:background="@drawable/buttonstyle3"
+                            android:text="Herencia de clases" />
+                    </RadioGroup>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/tv_question7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="20dp"
+                        android:text="¿qué es encapsulamiento?"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rdg_color_bro2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_question7"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp">
+
+                        <RadioButton
+
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:text="Realizar un analisis y diagrama de flujo"
+                            android:background="@drawable/buttonstyle4"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_question_good7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttonstyle6"
+                            android:text="Encerrar o empaquetar las operacines y datos relacionados con un objeto" />
+
+                        <RadioButton
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:background="@drawable/buttonstyle3"
+                            android:text="Conocer a fondo los lenguajes de programación" />
+                    </RadioGroup>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_question8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="20dp"
+                        android:text="Cuando una clase adquiere la propiedad de otra se dice que..."
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rdg_animal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_question8"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Desarrollo de software"
+                            android:background="@drawable/buttonstyle7"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttonstyle4"
+                            android:text="El código compiló correctamente" />
+
+                        <RadioButton
+                            android:id="@+id/rb_question_good8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:background="@drawable/buttonstyle6"
+                            android:text="Heredó las propiedades (Herencia Padre-hijo)" />
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/tv_question10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="20dp"
+                        android:text="¿Qué es un patrón de diseño en POO?"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rdg_animal2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_question10"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttonstyle"
+                            android:text="Un juego en android." />
+
+                        <RadioButton
+                            android:id="@+id/rb_question_good9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:background="@drawable/buttonstyle6"
+                            android:text="Técnicas de desarrollo de software para la solución a un problema en un contexto particular." />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttonstyle3"
+                            android:text="Programación Orientada a Objetos" />
+
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_question11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="20dp"
+                        android:text="Patrón de diseño MVC"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <RadioGroup
+                            android:id="@+id/rdg_color10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp">
+
+
+                            <RadioButton
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:layout_marginBottom="7dp"
+                                android:background="@drawable/img5" />
+
+                            <RadioButton
+                                android:layout_width="110dp"
+                                android:layout_height="95dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/img4" />
+
+
+
+                            <RadioButton
+                                android:id="@+id/rb_question_good10"
+                                android:layout_width="120dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/mvc"
+                                />
+
+                            <RadioButton
+                                android:layout_width="110dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/img9" />
+
+                        </RadioGroup>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/iv_send_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/btn_resultado"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/buttonstyle5"
+                android:text="Show Results!"
+                android:textColor="@color/sign_in" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

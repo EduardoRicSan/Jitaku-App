@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".InputProceessAndOutputs">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardUseCompatPadding="true"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Entradas, procesos y salidas"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* Entradas: todos los datos que nuestro programa utilizará\n por ejemplo edad, nombre,raza, etc.\n*Proceso: operaciones a las que se someten los datos de entrada.\n*Salida: el resultado de las operaciones realizadas. "
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center_vertical|right"/>
+                <ImageView
+                    android:src="@drawable/entradaprocesosalida"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ejemplo: \n Se requiere conocer la edad y nombre de los alumnos que son mayores de edad.\n a)Identifica las entradas\n b)Identifica las salidas\n c)Identifica el proceso"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Respuesta:\n Entradas.- 1.edad    2.nombre\n Salida.-      1. Nombre y edad del alumno mayor de edad\nProceso.-   1. Verificar los alumnos mayores de edad. "
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ejercicio practico"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/txt_ejercicioEPS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programa en donde se solicita mostrar la suma de dos numeros.\n Identificar entradas,proceso y salidas\n"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_entradas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="9pt"
+                        android:text="Entradas"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:id="@+id/rdg_entradas"
+                        android:layout_below="@id/txt_entradas"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Numero"
+                            android:id="@+id/rb_numero"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Suma"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="total"
+                            android:layout_marginBottom="7dp"/>
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_procesos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="9pt"
+                        android:text="Procesos"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/rdg_procesos"
+                        android:layout_below="@id/txt_procesos"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Operacion suma"
+                            android:id="@+id/rb_operacion_suma"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Resultado"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Numero"
+                            android:layout_marginBottom="7dp"/>
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_salidas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="9pt"
+                        android:text="Salidas"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"/>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/rdg_salidas"
+                        android:layout_below="@id/txt_salidas"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sumar"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Resultado"
+                            android:id="@+id/rb_resultado_final"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Numeros"
+                            android:layout_marginBottom="7dp"/>
+                    </RadioGroup>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/txt_continuar_algoritmos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorVerde"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:text="Continuar"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

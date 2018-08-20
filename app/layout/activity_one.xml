@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@color/celdaSeleccionada"
+    android:layout_height="wrap_content"
+    tools:context=".OneActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:background="@color/celdaSeleccionada"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Jugar juego"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="368dp"
+            android:background="@color/celdaSeleccionada"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                android:background="@color/celdaSeleccionada"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="6dp">
+
+                <GridView
+                    android:id="@+id/topListData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textDirection="rtl">
+
+                </GridView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/celdaSeleccionada"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="193dp"
+                tools:layout_editor_absoluteY="26dp">
+
+                <GridView
+                    android:id="@+id/topListPunts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="191dp"
+                    tools:layout_editor_absoluteY="28dp">
+
+                </GridView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/btPrincipal"
+            style="@style/estiloBotonAzulClaro"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/principal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="391dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/black"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:text="Bienvenido a Jitaku"
+            android:textColor="@color/button_color_sun_flower"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Jitaku no es solo una aplicación, es una herramienta con la que el usuario puede comenzar a conocer el maravilloso mundo de la programación ... Sé un Beginner ... sé un desarrollador de software."
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            >
+            <Button
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/buttonstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aprender Más"
+                android:id="@+id/btn_learn_more"/>
+            <Button
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/buttonstyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuevo Registro"
+                android:id="@+id/btn_register"
+                android:drawableRight="@drawable/ic_person_add_black_24dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico"
+                android:id="@+id/edt_email"
+                android:inputType="textEmailAddress"/>
+            <EditText
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:id="@+id/edt_password"
+                android:inputType="textPassword"/>
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonstyle3"
+                android:text="LOGIN"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/ic_send_black_24dp"
+                android:id="@+id/btn_login"/>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
