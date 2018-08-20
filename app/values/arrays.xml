@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="palabras">
+        <item>coupling</item>
+        <item>algoritmo</item>
+        <item>analisis</item>
+        <item>array</item>
+        <item>block</item>
+        <item>bolean</item>
+        <item>clase</item>
+        <item>extend</item>
+        <item>diseno</item>
+        <item>integer</item>
+        <item>jdk</item>
+        <item>java</item>
+        <item>cast</item>
+        <item>event</item>
+        <item>adt</item>
+        <item>method</item>
+        <item>object</item>
+        <item>private</item>
+        <item>public</item>
+        <item>static</item>
+        <item>test</item>
+        <item>uml</item>
+        <item>string</item>
+        <item>int</item>
+        <item>print</item>
+        <item>long</item>
+        <item>char</item>
+        <item>pilas</item>
+        <item>void</item>
+        <item>main</item>
+        <item>return</item>
+        <item>if</item>
+        <item>try</item>
+        <item>break</item>
+        <item>default</item>
+        <item>this</item>
+        <item>class</item>
+        <item>false</item>
+        <item>true</item>
+        <item>cath</item>
+    </string-array>
+</resources>

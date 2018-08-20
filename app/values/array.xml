@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mots">
+        <item>VECTOR</item>
+        <item>ARREGLOS</item>
+        <item>INT</item>
+        <item>STRING</item>
+        <item>FOR</item>
+        <item>IF</item>
+        <item>THEN</item>
+        <item>ANALISIS</item>
+        <item>ARGUMENTO</item>
+        <item>ANULAR</item>
+    </string-array>
+
+</resources>
+
+
