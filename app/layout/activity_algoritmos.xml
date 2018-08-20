@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".Algorithm">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardUseCompatPadding="true"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/marginTalgoritmos">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/algoritmos_y_diagramas_de_flujo"
+                    android:textSize="24dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/algoritmo_description"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Todo algoritmo debe cumplir las siguientes restricciones:\n
+        •	Debe ser bien definido (se entiende).\n
+        •	Debe ser preciso (es exacto).\n
+        •	Debe ser finito (tiene que concluir).\n\n Características del diagrama de flujo:\n
+        •	Los símbolos representan acciones o funciones en el programa.\n
+        •	Las flechas representan el orden de realización de las acciones o funciones, marcando el sentido o flujo lógico del algoritmo.\n
+        •	Cada símbolo tendrá al menos una flecha que conduzca a él y una flecha que parta de él, a excepción de los terminadores y conectores.\n
+        •	Se leen de arriba a abajo y de izquierda a derecha.\n
+"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/ejemploAlgori"/>
+                <ImageView
+                    android:src="@drawable/diagramaflujosuma"
+                   android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desc_algorit"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <ImageView
+                    android:src="@drawable/diagrama"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ejemplo2Algor"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flowchart"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"/>
+                <ImageView
+                    android:src="@drawable/gelatinadiagrama"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <Button
+                    android:id="@+id/btn_diagrama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/colorVerde"
+                    android:textSize="16dp"
+                    android:text="Practica simbologia"/>
+                <Button
+                    android:id="@+id/btn_algoritmo_practica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/colorVerde"
+                    android:textSize="16dp"
+                    android:text="Practica algoritmos"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
